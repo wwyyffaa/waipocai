@@ -1,0 +1,91 @@
+/**app.wxss**/
+
+.banner {
+  width: 100%;
+  height: 80rpx;
+  background-color: #535353;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner .map {
+  width: 15%;
+  height: 60%;
+}
+
+.banner .map .map_son {
+  width: 100%;
+  height: 100%;
+}
+
+.banner .search {
+  font-size: 20rpx;
+  text-indent: 15rpx;
+}
+
+.section_sea{
+  flex: 1;
+  height: 60%;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  background-color: whitesmoke;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.search_btn {
+  height: 60%;
+  width: 20%;
+  text-align: center;
+  font-size: 35rpx;
+  color: white;
+}
+
+.search {
+  flex: 1;
+}
+.images{
+  width: 100%;
+  height: 100%;
+}
+
+/**搜索框结束**/
+/*小弹框开始  */
+/* .yatoast {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 30rpx;
+  line-height: 48rpx;
+  padding: 20rpx 28rpx;
+  border-radius: 8rpx;
+  max-width: 600rpx;
+  z-index: 10000; } */
+  /* .yatoast.ng-enter, .yatoast.ng-leave, .yatoast.ng-move {
+    transition-property: opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease; }
+  .yatoast.ng-enter {
+    opacity: 0; }
+  .yatoast.ng-enter.ng-enter-active {
+    opacity: 1; }
+  .yatoast.ng-leave {
+    opacity: 1; }
+  .yatoast.ng-leave.ng-leave-active {
+    opacity: 0; }
+  .yatoast.ng-move {
+    opacity: 0.5; }
+  .yatoast.ng-move.ng-move-active {
+    opacity: 1; } */
+/*小弹框结束  */

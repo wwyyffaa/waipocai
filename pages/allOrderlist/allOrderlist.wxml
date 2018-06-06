@@ -1,0 +1,51 @@
+<view class='top' >
+  <view class='top_left'>消费详细：</view>
+  <view class='top_right'>
+    <text>订单编号：11111111111</text>
+    <text>订单状态：2222222222</text> 
+    <text>订单时间：3333333333</text> 
+  </view>
+</view>
+<view class='middle'>
+   <block wx:for="{{listData['list']}}" wx:key="*this">
+  <view class='middle_list'>
+    <view class='middle_list_l'>
+      <text>{{item.goodsName}}</text>
+      <text class='c_9b'>{{item.goodsEnName}}</text>
+    </view>
+    <view class='middle_list_r'>
+      <text class='jiage_m'>¥{{item.goodsXj}} </text>
+      <text class='c_9b c_12'>  X {{item.goodscount}}</text>
+    </view>
+  </view>
+ </block>
+</view>
+<view class='bottom'>
+  <view class='bottom_t'>
+    <view class='bottom_list'>
+      <view class='bottom_list_left'>
+        <image src='../../imgs/online.svg'></image>
+        <text>在线支付立减优惠：</text>
+      </view>
+      <text>0000</text>
+    </view>
+    <view class='bottom_list'>
+      <view class='bottom_list_left'>
+        <image src='../../imgs/new.svg'></image>
+        <text>本店新客立减：</text>
+      </view>
+      <text>11111</text>
+    </view>
+    <view class='bottom_list'>
+      <view class='bottom_list_left'>
+        <image src='../../imgs/juan.svg'></image>
+        <text>优惠券：</text>
+      </view>
+      <text>111111111</text>
+    </view>
+  </view>
+  <view class='bottom_b'>
+      <text>共计：<text class='c_16'>{{listData.fengshu}}</text> 份，总价<text class='c_16'>{{listData.zongjia}}</text>元</text> 
+  </view>
+
+</view>

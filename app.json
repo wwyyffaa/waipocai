@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/yuding/yuding",
+    "pages/allOrder/allOrder",
+    "pages/my/my",
+    "pages/shoplist/shoplist",
+    "pages/allOrderlist/allOrderlist",
+    "pages/ensureOrder/ensureOrder",
+    "pages/settlement/settlement",
+    "pages/spxj/spxj"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#535353",
+    "navigationBarTitleText": "外婆家",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#9b9b9b",
+    "selectedColor": "#FF641A",
+    "borderStyle": "#eee",
+    "backgroundColor":"#eeeeee",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"imgs/index.png",
+        "selectedIconPath": "imgs/index_s.png"
+      },
+      {
+        "pagePath": "pages/shoplist/shoplist",
+        "selectedIconPath": "imgs/fl_s.png",
+        "text": "分类",
+        "iconPath": "imgs/fl.png"
+      },
+      {
+        "pagePath": "pages/yuding/yuding",
+        "selectedIconPath": "imgs/time_s.png",
+        "text": "预定",
+        "iconPath": "imgs/time.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "selectedIconPath": "imgs/my_s.png",
+        "text": "我的",
+        "iconPath": "imgs/my.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+/* pages/yuidng/yuding.wxss */
+
+@import "../moban/toast/toast.wxss" ;
+view,page{
+  box-sizing: border-box;
+}
+
+ page{
+  width: 100%;
+  height: 100%;
+  color: #4A4A4A;
+  background-color: #f8f8f8;
+  font-size: 28rpx;
+}
+.top{
+  width: 100%;
+  height: 380rpx;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  
+  
+}
+.top_seclce{
+  color: rgba(255, 255, 255, 1);
+  font-weight: bold;
+}
+.top_l{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-right: 2rpx solid white;
+  text-align: center;
+  
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.top_r{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+ 
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.ssj_l{
+  position: absolute;
+  left: 23%;
+  bottom: 0;
+  height: 22rpx;
+  width: 35rpx;
+}
+.ssj_r{
+  position: absolute;
+  right: 23%;
+  bottom: 0;
+  height: 22rpx;
+  width: 35rpx;
+}
+
+.section{
+  height: 100rpx;
+  width: 90%;
+  margin-left: 5%;
+  padding-left: 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2rpx solid #eee;
+  margin-bottom: 6rpx;
+}
+.section__title{
+  font-size: 32rpx;
+  color: black;
+  margin-right: 30rpx;
+}
+.input_name{
+  font-size: 11pt;
+  color: #9b9b9b;
+  width: 300rpx;
+}
+.picker_selece{
+  width: 65%;
+}
+.submitBut{
+  border: 2rpx solid #ff641a;
+  height: 80rpx;
+  border-radius: 50rpx;
+  width: 90%;
+  margin-left: 5%;
+  color: #ff641a;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+}
+/*状态2  */
+.two{
+  width: 90%;
+  margin-left: 5%;
+  padding-left: 8%;
+}
+.count_title{
+  height:110rpx;
+  font-size: 30rpx;
+  color:black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.count_title_r{
+  display: flex;
+  width: 200rpx;
+  height: 100%;
+  font-size: 20rpx;
+  color: #9b9b9b;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.count_list{
+  display: flex;
+  width: 90%;
+  height: 400rpx;
+  font-size: 32rpx;
+  color: black;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-flow: wrap;
+  align-content: space-around;
+  border-bottom: 2rpx solid #eee;
+}
+.count_list text{
+  margin-bottom: 6rpx;
+  width: 100%;
+}
+.cancelYY{
+  width: 150rpx;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #9b9b9b;
+  align-self: flex-start;
+  border: 2rpx solid #eee;
+  margin-top: 20rpx;
+  margin-left: 68%;
+}
+/*状态2  */
+/*状态3  */
+.three{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.three_phone{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 36rpx;
+  color: black;
+  height: 80rpx;
+  margin-top: 20rpx;
+}
+.three_phone image{
+  height: 50rpx;
+  width: 50rpx;
+  margin-right: 4rpx;
+}
+.fuwushijian{
+  font-size: 24rpx;
+  color: #9b9b9b;
+  margin-top: 10rpx;
+}
+.callphone{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 40rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #ff641a;
+  border: 2rpx solid #ff641a;
+  border-radius: 50rpx;
+  text-align: center;
+}
+/*状态3  */

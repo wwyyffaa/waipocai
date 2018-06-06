@@ -1,0 +1,110 @@
+page, view ,scroll-view{
+  box-sizing: border-box; 
+}
+
+page {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+ 
+  position: relative;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: #4a4a4a;
+}
+
+/*顶栏开始 */
+
+.top {
+  padding: 0 5%;
+  width: 100%;
+  height: 84rpx;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+/*顶栏结束  */
+/*列表开始  */
+.middle{
+  width: 100%;
+  padding: 0 5%;
+
+}
+.middle_list{
+  padding: 10rpx 0;
+  border-bottom: 2rpx solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.middle_list_l{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 28rpx;
+  color: #4a4a4a;
+}
+.c_orange{
+   color: #FF641A;
+}
+.middle_list_r{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+  color: black;
+  height: 70rpx;
+  width: 170rpx
+}
+.c_9b{
+  color: #9b9b9b;
+}
+.deletered {
+  width: 50rpx;
+  height: 50rpx;
+}
+.add_del_img{
+  width: 100%;
+  height: 100%;
+}
+.jian.hidden{
+  display: none;
+}
+.text_3.hidden{
+  display: none;
+}
+.add {
+  width: 50rpx;
+  height: 50rpx;
+}
+/*列表结束  */
+/*确定结算开始  */
+.quedingtijiao{
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  background-color: #eee;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.ensure_but{
+  width: 170rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height:100rpx;
+  background-color: #FF641A;
+  color: #fff;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+}
+.zongjiage{
+  font-size: 32rpx;
+  color: #FF641A;
+}
+/*确定结算结束  */

@@ -1,0 +1,8 @@
+<view>
+  <view class='one'>本次消费（元）：</view>
+  <view class='count'>
+    <view class='two'>{{zongjia}}</view>
+    <view class='three' bindtap='settlement'>结算</view>
+    <view class='four'  bindtap='toList'>返回订单详细</view>
+  </view>
+</view>

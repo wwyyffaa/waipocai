@@ -1,0 +1,125 @@
+ <view class="toplan">
+  <view class="toplan_son {{top_sonId == 0?'toplan_son_selected':''}}" bindtap='gBcolor' data-id='0'>全部</view>
+  <view class="toplan_son {{top_sonId == 1?'toplan_son_selected':''}}" bindtap='gBcolor' data-id='1'>待付款</view>
+  <view class="toplan_son {{top_sonId == 2?'toplan_son_selected':''}}" bindtap='gBcolor' data-id='2'>待评价</view>
+  <view class="toplan_son_last toplan_son {{top_sonId == 3?'toplan_son_selected':''}}" bindtap='gBcolor' data-id='3'>退款/售后</view>
+</view>
+<view class='list'> 
+  <!--第一页  -->
+  <view wx:if="{{top_sonId == 0}}">
+    <block wx:for="{{DataOrder}}" wx:key="id">
+      <view class='listOrder'>
+        <view class='listorder_one'>
+          <view class='listorder_one_top'>
+            <text>外婆菜</text>
+            <text wx:if="{{item.state == 0 }}" class='daifukuan'>待付款</text>
+            <text wx:else class='yiwancheng'>已完成</text>
+          </view>
+          <view>
+            <text class='time_12px'>{{item.time}}</text>
+          </view>
+        </view>
+        <view class='listorder_two'>
+          <text class='listorder_two_son'>{{item.list[0].goodsName}}等 {{item.fengshu}} 件</text>
+          <text>¥{{item.zongjia}}</text>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!--第一页  -->
+  <!--第二页  -->
+  <view wx:if="{{top_sonId == 1}}">
+    <block wx:for="{{DataOrder}}" wx:key="id">
+      <view class='listOrder' wx:if="{{item.state == 0}}">
+        <view class='listorder_one'>
+          <view class='listorder_one_top'>
+            <text>外婆菜</text>
+            <text wx:if="{{item.state == 0 }}" class='daifukuan'>待付款</text>
+            <text wx:else class='yiwancheng'>已完成</text>
+          </view>
+          <view>
+            <text class='time_12px'>{{item.time}}</text>
+          </view>
+        </view>
+        <view class='listorder_two'>
+        <!-- <navigator url="../allOrderlist/allOrderlist" class="chakanxiangxi" >查看详细</navigator> -->
+        <view class="chakanxiangxi" bindtap='todetailed' data-id='0'>查看详细</view>
+           <!-- <text class="chakanxiangxi">查看详细</text>  -->
+          <text class='listorder_two_son'>{{item.list[0].goodsName}}等 {{item.fengshu}} 件 共计：¥{{item.zongjia}}</text>
+        </view>
+        <view class='listorder_three'>
+          <view class='jiesuan'>结算</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!--第二页  -->
+  <!--第三页  -->
+  <view wx:if="{{top_sonId == 2}}">
+    <block wx:for="{{DataOrder}}" wx:key="id">
+      <view class='listOrder'>
+        <view class='listorder_one'>
+          <view class='listorder_one_top'>
+            <text>外婆菜</text>
+            <text wx:if="{{item.state == 0 }}" class='daifukuan'>待付款</text>
+            <text wx:else class='yiwancheng'>已完成</text>
+          </view>
+          <view>
+            <text class='time_12px'>{{item.time}}</text>
+          </view> 
+        </view>
+        <view class='listorder_two'>
+          <view class="chakanxiangxi" bindtap='todetailed'  data-id='{{index}}'>查看详细</view>
+          <text class='listorder_two_son'>{{item.list[0].goodsName}}等 {{item.fengshu}} 件 共计：¥{{item.zongjia}}</text>
+        </view>
+        <view class='listorder_three'>
+          <view class='jiesuan'>评价</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!--第三页  -->
+  <!--第四页  -->
+  <view wx:if="{{top_sonId == 3}}">
+    <block wx:for="{{DataOrder}}" wx:key="id" >
+      <view class='listOrder'  wx:if="{{item.state == 1}}">
+        <view class='listorder_one'>
+          <view class='listorder_one_top'>
+            <text>外婆菜</text>
+            <text  class='yiwancheng'>已完成</text>
+          </view>
+          <view>
+            <text class='time_12px'>{{item.time}}</text>
+          </view>
+        </view>
+        <view class='listorder_two'>
+            <view class="chakanxiangxi" bindtap='todetailed' data-id='1'>查看详细</view>
+          <text class='listorder_two_son'>{{item.list[0].goodsName}}等 {{item.fengshu}} 件 共计：¥{{item.zongjia}}</text>
+        </view>
+        <view class='listorder_three mt'>
+          <text class='fuwuyuan'>点完菜十分钟之后，请呼叫服务员</text>
+          <view class='fuwuyuan tuikuan'>申请退款</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!--第四页  -->
+  <!-- <block wx:for="{{DataOrder}}" wx:key="id">
+    <view class='listOrder'>
+      <view class='listorder_one'>
+        <view class='listorder_one_top'>
+          <text>外婆菜</text>
+          <text wx:if="{{item.orderState == 0 }}" class='daifukuan'>待付款</text>
+          <text wx:else class='yiwancheng'>已完成</text>
+        </view>
+        <view>
+          <text class='time_12px'>2017-5-3 18:23:45</text>
+        </view>
+      </view>
+      <view class='listorder_two'>
+        <text class='listorder_two_son'>麻辣火锅  等7件</text>
+        <text>¥260</text>
+      </view>
+    </view>
+  </block> -->
+</view>

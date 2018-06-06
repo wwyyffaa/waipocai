@@ -1,0 +1,83 @@
+<!--pages/yuidng/yuding.wxml-->
+<import src="../moban/toast/toast.wxml"/>
+<view class='top'>
+  <image src='../../imgs/27-0558.jpg' class='images'></image>
+  <view class='top_l {{top_id == 0 ? "top_seclce" :"" }}' data-id='0' bindtap='top_btn'>网上预约</view>
+  <view class='top_r {{top_id == 1 ? "top_seclce" :"" }}' data-id='1' bindtap='top_btn'>电话预约</view>
+  <view wx:if="{{top_id == 0}}" class='ssj_l'>
+    <image src='../../imgs/ssj.png' class='images'></image>
+  </view>
+  <view wx:if="{{top_id == 1}}" class='ssj_r'>
+    <image src='../../imgs/ssj.png' class='images'></image>
+  </view>
+</view>
+<!--状态1  -->
+<view wx:if="{{top_id == 0 && submitState}}">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <view class="section__title">姓名 :</view>
+      <input name="name" value="{{nameValue}}"  class='input_name' bindfocus="inputFocusName" bindblur="inputBindblurName" />
+    </view>
+    <view class="section">
+      <view class="section__title">电话 :</view>
+      <input name="phone" value='{{phoneValue}}' class='input_name' bindfocus="inputFocusPhone" bindblur="inputBindblurPhone" />
+    </view>
+    <view class="section">
+      <view class="section__title">日期 :</view>
+      <picker mode="date" value="{{date}}"  end="2020-12-01" bindchange="bindDateChange" class='picker_selece' name="date">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">时间 :</view>
+      <picker mode="time" value="{{time}}"  end="24:59" bindchange="bindTimeChange" class='picker_selece' name="time">
+        <view class="picker">
+          {{time}} 
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">人数 :</view>
+      <picker bindchange="PickerChange" value="{{picker_selece_index}}" range="{{array}}" class='picker_selece' name="peopleNum">
+        <view class="picker">
+          {{array[picker_selece_index]}}
+        </view>
+      </picker>
+    </view>
+    <button form-type="submit" class='submitBut'>提交</button>
+  </form>
+  <template is="toast" data="{{...toast}}" />
+</view>
+<!--状态1  -->
+<!--状态2  -->
+<view wx:elif="{{top_id == 0 && submitState == false}}" class='two'>
+    <view class='count_title'>
+      <text>预约列表:</text>
+      <view class='count_title_r'>
+        <text>编号:</text>
+        <text>时间:</text>
+        <text>状态:</text>
+      </view>
+    </view>
+    <view class='count_list'>
+      <text>姓名：{{result.name}}</text>
+      <text>电话：{{result.phone}}</text>
+      <text>时间：{{result.date}} {{result.time}}</text>
+      <text>预约人数：{{result.peopleNum}}</text>
+      <text>预约状态：成功</text>
+    </view>
+    <view class='cancelYY' bindtap='cancelYY'>取消订单</view>
+ </view>
+<!--状态2  -->
+<!--状态3  -->
+<view wx:elif="{{top_id == 1}}" class='three'> 
+    <view class='three_phone'>
+        <image src='../../imgs/phone.png'></image>
+        <text>餐厅电话 ： {{shopPhone}}</text>
+    </view>
+    <text class='fuwushijian'>服务时间：8：00 -- 22：00</text>
+    <view class='callphone' bindtap='callphone'>拨    打</view>
+ </view>
+<!--状态3  -->

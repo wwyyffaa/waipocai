@@ -1,0 +1,124 @@
+/* pages/fenlie/fenlie.wxss */
+page,view{
+  box-sizing: border-box;
+}
+page{
+  background-color: #f8f8f8;
+  font-size: 28rpx;
+  color: #9b9b9b;
+  
+  height: 100%;
+  width: 100%;
+}
+/*顶栏开始  */
+.toplan{
+  padding: 0 5%;
+  height: 6.8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 12rpx;
+}
+.toplan_son{
+  width: 16%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.toplan_son_last{
+  width: 23%;
+}
+.toplan_son_selected{
+  border-bottom: 4rpx solid #ff641a;
+  color: #ff641a;
+}
+/*顶栏结束*/
+/*订单列表开始 */
+.listOrder{
+  /* height: 200rpx; */
+  width: 100%;
+  color: #5F5E5F ;
+  padding: 0 5%;
+  background-color: #fff;
+  margin-bottom: 12rpx;
+}
+.listorder_one{
+  height:140rpx;
+  border-bottom: 2rpx solid #eee;
+  
+  padding-top: 30rpx;
+}
+.listorder_one_top{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+.listorder_two{
+  height: 60rpx;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.time_12px{
+    font-size: 24rpx;
+    color: #9B9B9B;
+}
+.listorder_two_son{
+  font-size: 24rpx;
+}
+.daifukuan{
+  color: #ff641a;
+}
+.yiwancheng{
+  color: #9B9B9B;
+}
+
+.chakanxiangxi{
+  font-size: 24rpx;
+  color: #9b9b9b;
+  text-decoration: underline;
+}
+.listorder_three{
+  height: 50rpx;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10rpx;
+}
+.jiesuan{
+  width: 120rpx;
+  height: 50rpx;
+  border: 2rpx solid #FF641A;
+  font-size: 28rpx;
+  color: #FF641A;
+  text-align: center;
+  line-height:50rpx; 
+  border-radius: 10rpx;
+  margin-left: 6rpx;
+}
+.fuwuyuan{
+  font-size: 24rpx;
+  color: #9b9b9b;
+}
+.tuikuan{
+  width: 150rpx;
+  height: 50rpx;
+  border: 2rpx solid #9b9b9b;
+  font-size: 28rpx;
+  color:  #9b9b9b;
+  text-align: center;
+  line-height:50rpx; 
+  border-radius: 10rpx;
+  margin-left: 6rpx;
+}
+.mt{
+  margin-top: 10rpx;
+}
+
+
+
+
+/*订单列表结束 */

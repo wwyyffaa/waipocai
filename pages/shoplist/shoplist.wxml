@@ -1,0 +1,60 @@
+<!--导入搜索栏  -->
+<import src="../moban/search.wxml"/> 
+<template is="sousuo"></template>
+<!--导入搜索栏  -->
+<view class="content"  style="height:{{countHeight}}px">
+<!--左边栏开始  --> 
+  <view class='content_left'>
+  <block wx:for="{{list_left}}" wx:key="id">
+    <view class="list_left_btn {{yangshi_id == item.goodsId? 'active' : ''}}"  bindtap='changeys'  data-id='{{item.goodsId}}' data-curIndex='{{item.l_index}}'>{{item.goodsName}}
+      <view class='xiaotubiao' wx:if="{{item.goodsUnit>0}}">{{item.goodsUnit}}</view>
+    </view>
+     </block>
+  </view> 
+<!--左边栏结束  -->
+<!--右边栏开始  -->
+  <scroll-view class='content_right {{fengshu > 0 ? "pd" : ""}}' scroll-y="{{true}}" style="height:{{countHeight}}px">
+  <view class='tuijian'>
+    <view class='line'></view>
+    <view class='tuijian_text'>主力推荐</view>
+  </view>
+    <block wx:for="{{list_right[yangshi_id]}}" wx:key="id">
+      <view class='shoplist_box'>
+         <view  class='shoplist_box_l'>
+            <image class='shoplist_box_l_img'  src='{{item.goodsImage}}' bindtap='shopDetailed' data-id='{{item.goodsId}}' data-page='{{item.goodspage}}'></image>
+         
+         </view>  
+        <view class='shoplist_box_r'>
+          <view class='top'>
+            <view class='ch_text'>{{item.goodsName}}</view>
+            <view class='en_text'>{{item.goodsEnName}}</view>
+            <view class='hot'>
+              <image src='{{item.hot}}'></image>
+            </view>
+          </view>
+          <view class='bottom'>
+            <text class='text_1'>¥{{item.goodsYj}}</text>
+            <text class='text_2'>¥{{item.goodsXj}}</text>
+            <view class='bottom_son'>
+              <view  class='jian {{item.goodscount > 0?"":"hidden"}}' data-goodsid='{{item.goodsId}}' bindtap="jian">
+                <image src='../../imgs/Deletered.svg' class='jian_jia'></image>
+              </view>
+              <text  class='text_3 {{item.goodscount > 0?"":"hidden"}}'>{{item.goodscount}}</text>
+              <view class='jia' bindtap='add_commodity' data-goodsid='{{item.goodsId}}'>
+                <image src='../../imgs/Addred.svg' class='jian_jia'></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view> 
+    </block>
+  </scroll-view>
+  <!--右边栏结束  -->
+  <!--结算栏开始  -->
+  <view wx:if="{{fengshu > 0}}" class='jiesuan'>
+    <text>共计：{{fengshu}}份,</text>
+    <text>总计：<text class='jiagezonghe'>{{zongjia}}</text>元</text> 
+    <view class='jiesuan_but' bindtap='xOrder'>购物车</view>
+  </view>
+  <!--结算栏结束  -->
+</view>

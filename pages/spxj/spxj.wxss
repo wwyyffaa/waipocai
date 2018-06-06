@@ -1,0 +1,180 @@
+/* pages/product/product.wxss */
+.head{
+  background: #f2f2f2;
+}
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.sele{
+  background: #fff;
+}
+.zhaop{
+    padding-top:20rpx;
+}
+
+.zp{
+  float: left;
+  background: red;
+  color: #fff;
+  
+  height:40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  width:80rpx;
+  padding-left:2rpx;
+  padding-right: 0px;
+  border-radius:8rpx;
+  margin-left:20rpx; 
+   margin-right:20rpx;
+}
+.name{
+  font-size:28rpx;
+  color:#474747;
+}
+.xiaol{
+  font-size:24rpx;
+  color:#9a9a9a;
+  padding-top: 10rpx;
+}
+.xq{
+  font-size:24rpx;
+  color:#9a9a9a;
+  padding: 10rpx 20rpx 10rpx 20rpx;
+}
+.jg{
+  padding-left: 20rpx;
+  font-size:24rpx;
+  color:#9a9a9a;
+}
+.xj{
+  font-size:28rpx;
+  color:RED;
+}
+.yj{
+  padding-left: 10rpx;
+  text-decoration:line-through; 
+}
+
+
+.cernter{
+  margin-top:20rpx;
+  background: #fff;
+  height:80rpx;
+}
+.guig{
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  color:#9a9a9a;
+  height:80rpx;
+  line-height: 80rpx;
+  float: left;
+}
+.img{
+  width:40rpx;
+  height:40rpx;
+  float:right;
+  padding-top: 20rpx;
+  padding-right: 20rpx;
+}
+
+.pj{
+   margin-top:20rpx;
+   background: #fff;
+}
+
+.pj-zh{
+  font-size: 24rpx;
+  color:#9a9a9a;
+  height:80rpx;
+  line-height: 80rpx;
+  padding: 0 20rpx 0 20rpx;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.zhpj{
+  font-size: 28rpx;
+  color:#000;
+}
+.pf{
+  font-size: 28rpx; 
+  color:red;
+}
+.sl{
+  float: right;
+}
+.image_last{
+  top: 10rpx;
+}
+
+
+.footer{
+   margin-top:20rpx;
+   background: #fff;
+   overflow: hidden;
+}
+.djcr{
+  text-align: center;
+  padding:20rpx 0 20rpx 0;
+  color:#484848;
+  font-size: 32rpx;
+}
+.tr{
+  float: left;
+  font-size: 28rpx;
+  padding-left: 100rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.tr1{
+  float: left;
+  font-size: 28rpx;
+   padding-left:100rpx;
+   position: relative;
+   margin-bottom: 20rpx;
+}
+.tr2{
+  float: left;
+  font-size: 28rpx;
+   padding-left:195rpx;
+   position: relative;
+   margin-bottom: 20rpx;
+}
+.td1{
+     font-size: 24rpx;
+      color:#9a9a9a;
+}
+.image{
+  width:60rpx;
+  height:60rpx;
+  position: absolute;
+  left:20rpx;
+}
+.image1{
+  width:60rpx;
+  height:60rpx;
+  position: absolute;
+  left:115rpx;
+}
+
+/*底部定位栏目*/
+.bottom{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+
+}
+.btn{
+   float: right;
+  background: red;
+  color: #fff;
+  border-radius:0;
+  height:90rpx;
+  line-height: 90rpx;
+  font-size: 32rpx;
+}

@@ -1,0 +1,67 @@
+<!--pages/spxj/spxj.wxml-->
+<view class="head">
+   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
+      <!-- <block wx:for="{{movies}}" wx:for-index="index">     -->
+        <swiper-item>    
+          <image src="{{shopDetailed.goodsImage}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item> 
+         <swiper-item>    
+          <image src="../../imgs/27-0558.jpg" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+      <!-- </block>     -->
+    </swiper>
+    <view class="sele"> 
+       <view class="zhaop">
+         <button class="zp">招牌</button>
+         <view class="name">{{shopDetailed.goodsName}}</view>
+       </view>
+       <view class="xiaol">
+         <text style="padding-left:20rpx">月售2717份</text>
+         <text style="padding-left:10rpx">好评率99%</text>
+       </view>
+       <view class="xq">
+         <text>商品的详细信息</text>
+       </view>
+       <view class="jg">
+         <text class="xj">￥{{shopDetailed.goodsXj}}</text>
+         <text class="yj">￥{{shopDetailed.goodsYj}}</text>
+       </view>
+    </view> 
+
+    <view class="cernter">
+       <view class="guig">规格:<text>已选择中辣</text></view>
+       <image src="../../imgs/right9b.svg" class="img"></image>
+    </view>
+
+    <view class="pj">
+       <view class="pj-zh">评价:<text class="zhpj">综合评价</text><text class="pf">4.9</text><view class="sl">查看全部2189条评论</view></view>
+
+    </view>
+
+    <view class="footer">
+        <view class='djcr'>店家承诺</view>
+        <view class="tr" >
+          <image src="../../imgs/qualityred.svg" class="image"></image>
+          <view class="td">品质保证</view>
+          <view class="td1">当天现做保证新鲜</view>
+        </view>
+        <view class="tr2" >
+        <image src="../../imgs/speedred.svg" class="image1"></image>
+          <view class="td">上菜及时</view>
+          <view class="td1">你想象不到的速度</view>
+        </view>
+        <view class="tr" >
+        <image src="../../imgs/likered.svg" class="image"></image>
+          <view class="td">味道可口</view>
+          <view class="td1">希望这是你一直寻找的味道</view>
+        </view>
+        <view class="tr1" >
+        <image src="../../imgs/greenred.svg" class="image image_last"></image>
+          <view class="td">食材保证</view>
+          <view class="td1">我们都爱吃的放心菜园</view>
+        </view>
+    </view>
+</view>
+<view class="bottom">
+    <button class="btn" bindtap='backToShoplist'>加入购物车</button>
+</view>

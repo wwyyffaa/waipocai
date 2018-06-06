@@ -1,0 +1,13 @@
+<template name="sousuo">
+  <view class='banner'>
+    <view class='map'>
+      <image src='../../icon/dt.svg' class='map_son'></image>
+    </view>
+    <view class="section_sea">
+      <icon type="search" size="15" color="gray" />
+      <input placeholder="麻婆豆腐" placeholder-style="color:gray" class='search' />
+      <icon type="cancel" size="20" color="gray" />
+    </view>
+    <view class='search_btn'>搜索</view>
+  </view>
+</template>

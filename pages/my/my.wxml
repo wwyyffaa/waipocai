@@ -1,0 +1,49 @@
+<view class="top">
+  <image src='{{avatarUrl}}' class='nickName_img'></image>
+  <text class='nickname'>{{nickName}}</text>
+</view>
+<view class="content">
+  <view class='content_Ck'> 
+    <text bindtap='toAllOrder'>查看全部 ></text>
+  </view>
+   <view class='content_Tb'>
+      <view class='ontent_Tb_son' bindtap='toAllOrder' data-id='0'>
+         <image src='../../icon/allmy.svg'></image>
+          <text>全部</text>
+       </view>
+    <view class='ontent_Tb_son'  bindtap='toAllOrder' data-id='1'>
+      <image src='../../icon/payment.svg'></image>
+        <text>待付款</text>
+        <view class='xiaotubiao' wx:if="{{noMoney > 0}}">{{noMoney}}</view>
+    </view>
+    <view class='ontent_Tb_son' bindtap='toAllOrder' data-id='2'>
+      <image src='../../icon/evaluate.svg'></image>
+        <text>待评价</text>
+        <view class='xiaotubiao' wx:if="{{noComment > 0}}">{{noComment}}</view>
+    </view>
+    <view class='ontent_Tb_son' bindtap='toAllOrder' data-id='3'>
+      <image src='../../icon/service.svg'></image>
+        <text>退款/售后</text>
+    </view>
+  </view>
+  <view class='content_List content_List_Last'>
+    <text>优惠券</text>
+    <text>></text>
+  </view>
+  <view class='content_List content_List_Last'>
+    <text>绑定手机 </text>
+    <text>></text>
+  </view>
+  <view class='content_List content_List_Last'>
+    <text>意见反馈</text>
+    <text>></text>
+  </view>
+  <view class='content_List content_List_Last'>
+    <text>客服电话:</text>
+    <text class='fuwuTime'>13888888888（服务时间：8：00 - 20：00）</text>
+  </view>
+  <view class='content_List content_List_Last '>
+    <text>版本号</text>
+    <text>st1.1.1</text>
+  </view>
+</view>

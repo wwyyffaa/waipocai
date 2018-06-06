@@ -1,0 +1,102 @@
+/**index.wxss**/
+page{
+   background-color: #f8f8f8;
+}
+page,view{
+  box-sizing: border-box;
+}
+.sf{
+   height: 380rpx;
+   width: 100%;   
+}
+.swiper_top{
+  width: 100%;
+  height: 100%;
+ 
+}
+.swiper_top_slide-image {
+  width: 100%;
+  height: 100%;
+}
+
+/**轮播结束**/
+
+.fenlei {
+  width: 100%;
+  height: 400rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+  
+  padding: 30rpx 0;
+}
+
+.fenlei_son {
+  width: 25%;
+  height: 160rpx;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+.fenlei_son_img {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+}
+
+.fenlei_son_text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  color: black;
+}
+
+/**分类结束**/
+.swiper_bottom{
+  width: 100%;
+  height: 230rpx;
+  margin-top: 30rpx;
+  padding: 0 5%;
+  
+  
+}
+.swiper_b{
+  height: 230rpx;
+  width: 100%;
+  
+}
+.one{
+  font-size: 26rpx;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100rpx;
+}
+.two{
+  font-size: 32rpx;
+  color: #9b9b9b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 110rpx;
+
+}
+.font_bind{
+  font-weight: bold;
+  color: black;
+}
+.chengse{
+  color: #FF641A;
+}
+

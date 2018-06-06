@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<import src="../moban/search.wxml" />
+<template is="sousuo"></template>
+<view class='sf'>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper_top' indicator-active-color = "#FFFFFF">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="swiper_top_slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>
+<!--轮播结束-->
+<view class='fenlei'>
+  <block wx:for="{{centerimgs}}" wx:key="*this">
+    <view class='fenlei_son' bindtap="go_fenlei" data-id="{{index}}">
+      <view class='fenlei_son_img'>
+        <image class='images' src="{{item.img}}"></image>
+      </view>
+      <text class='fenlei_son_text'>{{item.text}}</text>
+    </view>
+  </block>
+</view>
+<!--分类结束-->
+<view class='swiper_bottom'>
+
+  <swiper indicator-dots="true"  interval="5000" duration="1000" class='swiper_b' indicator-color="rgba(0,0,0,.5)" indicator-active-color = "#FF641A">
+    <!-- <block wx:for="{{imgUrls}}"> -->
+    <swiper-item class="item_one">
+      <view class='one'>
+        <text> • 用户第一次下单满一百减二十</text>
+        <text> • 过年期间 , 全场满三百送一箱青岛啤酒 , 可叠加使用 ；</text>
+        <image></image>
+      </view>
+      <view class='two'>
+        <text class='font_bind'>2017年<text class='chengse'>账单</text>来了</text>
+        <text>最懂您最爱吃的菜在这里 . . . . . .</text>
+      </view>
+    </swiper-item>
+    <swiper-item>
+
+    </swiper-item>
+    <!-- </block> -->
+  </swiper>
+
+</view>

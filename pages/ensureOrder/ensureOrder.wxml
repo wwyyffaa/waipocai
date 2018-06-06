@@ -1,0 +1,28 @@
+<view class='top'>
+  <text>我的菜单</text> 
+</view>
+<scroll-view class='middle' scroll-y="{{true}}" style="height:{{countHeight}}px">
+ <block wx:for = '{{shoplist}}' wx:key="*this">
+  <view class='middle_list' wx:if="{{item.goodscount > 0}}">
+    <view class='middle_list_l'>
+      <text>{{item.goodsName}}</text>
+      <text class='c_9b'>{{item.goodsEnName}}</text>
+      <text class='c_orange'>{{item.goodsXj}}元 / 盘</text>
+    </view>
+    <view class='middle_list_r'>
+       <view  class='deletered' data-id = "{{index}}" bindtap='delSum' >
+        <image src='../../imgs/Deletered.svg' class='add_del_img'></image>
+      </view> 
+      <text>{{item.goodscount}}</text>
+      <view class='add'   data-id = "{{index}}"  bindtap='addSum' >
+        <image src='../../imgs/Addred.svg' class='add_del_img'></image>
+      </view>
+    </view>
+  </view>
+   </block>
+</scroll-view>
+<view class='quedingtijiao'>
+  <text>共计：{{fengshu}}份 , 总计：</text>
+  <text><text class='zongjiage'>{{zongjia}}</text> 元</text>
+  <view class='ensure_but' bindtap='xOrder'>确定提交</view>
+</view>
